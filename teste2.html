@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário - Festival de Shows Internacionais</title>
+</head>
+<body>
+    <h1>Global Sound Festival</h1>
+    <p>Seja muito bem-vindo ao site oficial do <strong><em>Global Sound Festival</em></strong>! <br> Aqui, você encontrará todas as informações sobre o evento mais aguardado do ano, que reunirá artistas renomados de todos os cantos do mundo.<br> Prepare-se para viver momentos inesquecíveis, celebrar a diversidade musical e mergulhar em uma experiência única que combina energia, emoção e cultura. <br><strong>Estamos muito felizes em tê-lo conosco nessa jornada sonora!</strong>
+    </p>
+
+    <p>Cadastre-se e garanta seu ingresso!</p>
+    <form action="/enviar" method="post">
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Número de telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+
+        <!-- Data de nascimento -->
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+        <br><br>
+
+        <!-- Gênero -->
+        <label>Gênero:</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+        <!-- Estado -->
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+        </select>
+        <br><br>
+
+        <!-- Lista de preferência de show -->
+        <label for="shows">Artistas preferidos:</label>
+        <textarea id="shows" name="shows" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <p><strong>Confira a agenda do evento</strong></p>
+
+        <!-- Tabela de informações -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>05/01/2026</th>
+                    <th>06/01/2026</th>
+                    <th>07/01/2026</th>
+                    <th>08/01/2026</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Harry Styles</td>
+                    <td>Zayn Malik</td>
+                    <td>Louis Tomlinson</td>
+                    <td>Niall Horan</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>17hrs</td>
+                    <td>17hrs</td>
+                    <td>17hrs</td>
+                    <td>17hrs</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Estádio Mané Garrincha : Portão A</td>
+                    <td>Estádio Mané Garrincha : Portão B</td>
+                    <td>Estádio Mané Garrincha : Portão C</td>
+                    <td>Estádio Mané Garrincha : Portão D</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+
+        <!-- Botões de envio -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
