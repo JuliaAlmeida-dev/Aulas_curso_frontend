@@ -1,29 +1,31 @@
-<style>
-    .classeteste{
-        color: blue;
-        text-align: center;
-        border: 2px solid green;
-        margin-top: 10px;
+
+    
+    
+    
+  
+    
+    div{
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
     }
     body{
-        background-color: lightblue;
+        background-color: rgb(154, 187, 225);
     }
     h1{
         color: white;
         text-align: center;
+        border: 10px solid white;
+        border-radius: 60px;
+        
     }
     p{
-        font-family: Verdana;
-        font-size: 20px;
-        color: yellow;
-        border: 2px solid black;
+        font-family:Arial, Helvetica, sans-serif
+        font-size:  30px;
+        color: white;
     }
-    #meuID{
-        color: brown;
-    }
-    label{
-        color: blueviolet;
-        border: 0px;
-    }
+    h1,p{
+        padding: 30px 50px;
 
-</style>
+    }
