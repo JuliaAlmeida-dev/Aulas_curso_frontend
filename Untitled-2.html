@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Festival de Shows Internacionais</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <p>Por favor, preencha suas informações abaixo:</p>
+
+    <form action="/submit" method="post">
+        <!-- Data de nascimento -->
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+        <br><br>
+
+        <!-- Gênero -->
+        <label>Gênero:</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+        <!-- Interesses -->
+        <label>Interesses:</label>
+        <input type="checkbox" id="shows" name="interesses" value="shows">
+        <label for="shows">Shows</label>
+        <input type="checkbox" id="workshops" name="interesses" value="workshops">
+        <label for="workshops">Workshops</label>
+        <input type="checkbox" id="cultura" name="interesses" value="cultura">
+        <label for="cultura">Cultura</label>
+        <br><br>
+
+        <!-- Estado -->
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+
+            <!-- Seleção do tipo de ingresso -->
+        <label for="ingresso">Tipo de ingresso:</label>
+        <select id="ingresso" name="ingresso">
+            <option value="vip">VIP</option>
+            <option value="premium">Premium</option>
+            <option value="pista">Pista</option>
+        </select>
+        <br><br>
+
+        <!-- Lista de preferências de show -->
+        <label for="shows">Artistas preferidos:</label>
+        <textarea id="shows" name="shows" rows="4" cols="50"></textarea>
+        <br><br>
