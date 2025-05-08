@@ -49,3 +49,7 @@ header,footer{
     gap: 1rem;
 }
 
+.inicio{
+    grid-template-columns: 3;
+}
+
